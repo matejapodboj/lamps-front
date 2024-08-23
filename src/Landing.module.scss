@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 20px;
+  color: orange;
+  min-height: 100vh;
+}
+
+.heading {
+  font-size: 2em;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: orange;
+}
+
+.searchBar {
+  width: 80%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid orange;
+  margin-bottom: 20px;
+  background-color: #333;
+  color: orange;
+  margin-left: 10%;
+  margin-right: 10%; 
+
+  &:focus {
+    outline: none;
+    border-color: #ffcc66;
+  }
+}
+
+.content {
+  display: flex;
+  width: 100%;
+
+  .filterSidebar {
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+
+    .filterGroup {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+
+      .filterTitle {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      input {
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid orange;
+        border-radius: 5px;
+        background-color: #333;
+        color: orange;
+
+        &:focus {
+          outline: none;
+          border-color: orange;
+        }
+      }
+    }
+  }
+
+  .avatar {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+select {
+  border: 1px solid orange;
+  border-radius: 5px;
+  background-color: #333;
+  color: orange;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid orange;
+  border-radius: 5px;
+  background-color: #333;
+  color: orange;
+
+  div {
+      display: flex;
+      align-items: center;
+
+      button {
+          margin: 0 5px;
+          background-color: #333;
+          color: orange;
+      }
+  }
+
+  .activePage {
+      background-color: orange;
+      color: black;
+  }
+}
+

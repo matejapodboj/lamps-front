@@ -1,0 +1,35 @@
+.faq-page {
+    background-color: #222;
+    color: #FFF;
+    padding: 5% 10%;
+
+    h1 {
+        margin-bottom: 30px;
+        text-align: center;
+        color: orange;
+    }
+
+    .faq-item {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #444;
+
+        h2 {
+            cursor: pointer;
+            color: orange;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        p {
+            display: none;
+            margin-top: 10px;
+        }
+
+        &.expanded {
+            p {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.headerWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 120px;
+    background-color: black;
+    border-bottom: 3px solid orange;
+
+    .link {
+        font-size: 20px;
+        color: #eee;
+        margin: 0 auto;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: orange;
+        }
+
+        &.active {
+            color: orange;
+            text-decoration: underline;
+        }
+        
+        &.active .cartIcon {
+            fill: orange;
+        }
+    }
+
+    .logo {
+        width:  100px;
+        height: 100px;
+        margin-right: auto;
+    }
+
+    .cartIcon {
+        width: 24px;
+        height: 24px;
+        fill: #eee;
+    }
+
+}
